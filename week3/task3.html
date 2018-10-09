@@ -1,0 +1,159 @@
+<html>
+<head>
+    <style>
+        body{
+
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        nav{
+            display: flex;
+
+
+        }
+        nav a:hover{
+            background-color: red;
+            color: white;
+        }
+        nav a {
+            font-size: 1.5em;
+            text-align: center;
+            flex: 100%;
+            justify-content: space-around;
+            background-color: gray;
+            text-decoration: none;
+            color: black;
+        }
+        .logo_part{
+            display: flex;
+        }
+        .logo_part .search{
+
+            align-content: center;
+        }
+        .main_section{
+            margin: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .cards{
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+
+            border: solid;
+            border-color: red;
+            border-radius: 10px;
+            margin: 30px;
+        }
+        .card a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+        .card .price{
+            font-weight: bold;
+            text-align: center;
+        }
+        footer{
+            display: flex;
+            background-color: black;
+
+            height: 75px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container{
+            background-color: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body background="back.png">
+<div class="container">
+    <header>
+        <nav>
+            <a href="#" class='active'>Home</a><a href="#">Contacts</a><a href="#">About us</a><a href="#">Comitee</a>
+        </nav>
+        <div class="logo_part">
+            <img src="http://via.placeholder.com/200x100"/>
+            <div class="search">
+                <input type="text"/>
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main_section">
+        <div class="cards">
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="title">Toyota Avensis</a>
+                <img src="http://via.placeholder.com/150x150"/>
+                <div class="description">
+
+                </div>
+                <div class="price">
+                    50.000$
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        @copy; 2017 Wheels.kz. All cars
+    </footer>
+</div>
+</html>

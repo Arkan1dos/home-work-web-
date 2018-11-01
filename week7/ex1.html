@@ -1,0 +1,53 @@
+<html>
+<head>
+    <style>
+        #news{
+            border:1px solid red;
+            width:400px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="news"></div>
+<button id="sport">Load Sport news</button>
+<button id="politics">Load Politics news</button>
+<button id="bussiness">Load Bussiness news</button>
+
+
+<script>
+    var a = ['news-bussiness.txt','news-politics.txt','news-sport.txt'];
+    function readTxt(txt) {
+        document.getElementById('news').innerHTML = txt;
+    }
+    function onResponse(response) {
+        return response.text().then(readTxt);
+    }
+    function open(e)
+    {
+        for (i of a)
+        {
+            if('news-'+e.target.id+'.txt' === i)
+            {
+                fetch(i)
+                    .then(onResponse);
+
+                console.log(Text);
+            }
+
+        }
+
+    }
+
+
+    btn1 = document.getElementById('sport');
+    btn1.addEventListener('click',open);
+    btn2 = document.getElementById('politics');
+    btn2.addEventListener('click',open);
+    btn3 = document.getElementById('bussiness');
+    btn3.addEventListener('click',open);
+
+</script>
+</body>
+</html>

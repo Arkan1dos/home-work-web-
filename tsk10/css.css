@@ -1,0 +1,16 @@
+.car{
+    border: solid red;
+    margin: 10px;
+    padding-bottom: 0px;
+    display: inline-block;
+    border-radius:5px;
+    width:350px;
+}
+img{
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+}
+.opis{
+    display: inline-block;
+}
